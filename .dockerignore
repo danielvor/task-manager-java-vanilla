@@ -1,0 +1,16 @@
+.git
+.gitignore
+.dockerignore
+target/
+.mvn/
+mvnw
+mvnw.cmd
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+HELP.md
+Dockerfile
+DEPLOY_GUIDE.md
+README.md

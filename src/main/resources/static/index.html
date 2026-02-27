@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="app-container">
+        <header class="app-header">
+            <h1><i class="fa-solid fa-check-double"></i> Tarefas</h1>
+            <p class="subtitle">Organize seu dia com estilo</p>
+        </header>
+
+        <section class="task-input-section">
+            <form id="task-form">
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="O que você precisa fazer?" required autocomplete="off">
+                    <button type="submit" id="add-btn" class="add-btn">
+                        <i class="fa-solid fa-plus"></i> Adicionar
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <div class="list-header">
+                <h2>Suas Tarefas</h2>
+                <div class="stats">
+                    <span id="completed-count">0</span> / <span id="total-count">0</span> concluídas
+                </div>
+            </div>
+
+            <ul id="task-list" class="task-list">
+                <!-- As tarefas serão inseridas aqui via JavaScript -->
+                <div class="empty-state" id="empty-state">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <p>Nenhuma tarefa no momento. Adicione uma acima!</p>
+                </div>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>Projeto de Nível Júnior: Aplicação Fullstack desenvolvida com Java (Spring Boot) no back-end e Vanilla JS, HTML e CSS no front-end.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
